@@ -77,9 +77,11 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
+    gap: 15,
+    backgroundColor: '#699ba2',
   },
   header: {
-    fontSize: 28,
+    fontSize: 34,
     marginBottom: 20,
     fontWeight: 'bold',
   },
@@ -91,30 +93,29 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 5,
   },
-  picker: {
-    backgroundColor: '#f2f2f2',
-  },
-  weatherCard: {
-    marginTop: 20,
-    padding: 15,
-    width: 220,
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  city: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  condition: {
-    fontSize: 16,
-    color: '#555',
-  },
-  temperature: {
-    fontSize: 18,
-    marginTop: 5,
-  },
+
+weatherCard: {
+  padding: 20,
+  borderRadius: 16,
+  backgroundColor: '#fdfdfd',
+  elevation: 6,
+
+  alignItems: 'center',
+},
+city: {
+  fontSize: 22,
+  fontWeight: '700',
+},
+condition: {
+  fontSize: 16,
+  color: '#1976d2',
+},
+temperature: {
+  fontSize: 26,
+  fontWeight: '600',
+},
   loading: {
     marginTop: 20,
-    color: '#999',
+    color: '#b4a6a6',
   },
 });
