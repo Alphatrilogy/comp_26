@@ -10,7 +10,7 @@ type WeatherData = {
 
 export default function App() {
   const [unit, setUnit] = useState('C');
-  const [selectedCity, setSelectedCity] = useState<string>('Saskatoon');
+  const [selectedCity, setSelectedCity] = useState('Saskatoon');
 
   const weatherData: WeatherData[] = [
     { city: 'Saskatoon', temperatureC: 22, condition: 'Sunny' },
@@ -43,7 +43,7 @@ export default function App() {
         <Text style={styles.label}>Select a city:</Text>
         <Picker
           selectedValue={selectedCity}
-          onValueChange={(value: string) => setSelectedCity(value)}
+          onValueChange={(city) => setSelectedCity(city)}
           style={styles.picker}
         >
           {weatherData.map((data) => (
